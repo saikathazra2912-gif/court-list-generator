@@ -10,6 +10,25 @@ A Python project that automates the preparation of a formatted, next-day court-p
 
 *Illustrative mock-up based on the fictional demonstration's data and layout; this is not a screenshot of a verified Excel execution. Run `fictional_demo.py` to generate the actual workbook.*
 
+## Fictional portfolio materials (safe to share)
+
+- [Illustrative report preview](assets/fictional-demo-preview.svg) — a conceptual preview, **not a screenshot of the uploaded operational report**.
+- [Fictional sample CSV](sample_data/fictional_court_records.csv) — invented names, reference IDs, and generic court names.
+- [Standalone demonstration](fictional_demo.py) — creates `fictional_demo_output.xlsx` locally using fictional data embedded in the script.
+- [Blank Excel template generator](make_portfolio_template.py) — creates `fictional_blank_template.xlsx` locally, with generic headers, borders and landscape page setup.
+
+Run either or both generators after installing requirements:
+
+```powershell
+python -m pip install -r requirements.txt
+python fictional_demo.py
+python make_portfolio_template.py
+```
+
+The blank portfolio template is **not** the compatible `COURT_TEMPLATE.xlsx` required by the original production-oriented script. It is a separate, generic example.
+
+**Privacy:** The original uploaded court list, original official template, and original source export are **not published**. Replacing only prisoner and father names is not enough to anonymise records if JIDs, case numbers, court assignments, or other identifiers remain. All public demonstration rows are independently fictional.
+
 ## What the program does
 
 - Reads a `PrisonersList*.xls`, `.xlsx`, or `.xlsm` input file. The `.xls` reader supports an HTML-table export saved with an `.xls` extension; it is not a general-purpose legacy binary `.xls` reader.

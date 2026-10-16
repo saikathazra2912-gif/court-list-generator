@@ -1,0 +1,21 @@
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Do not publish private records, templates, or generated reports
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.csv
+*.ods
+*.pdf
+
+# Local and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -42,7 +42,20 @@ The script is designed for a **locally supplied, compatible** `COURT_TEMPLATE.xl
 
 4. The script creates a dated Excel workbook in the project folder (the default date is tomorrow).
 
-**Note:** Because the original template and source files are intentionally excluded, this repository is a code portfolio rather than a self-contained runnable demonstration. The separate fictional-data demo is better for people who want to run an example immediately.
+**Note:** Because the original template and source files are intentionally excluded, this repository is a code portfolio rather than a self-contained runnable demonstration. Use the included `fictional_demo.py` to run a standalone fictional example immediately.
+
+## Run the standalone fictional demonstration
+
+A separate, self-contained example is included for recruiters and reviewers. It uses **only hard-coded fictional names, generic areas, and generic court types**. It does not load any official template or operational record.
+
+```powershell
+python -m pip install -r requirements.txt
+python fictional_demo.py
+```
+
+The command creates `fictional_demo_output.xlsx` locally, showing custom sorting, repeat-ID serial numbers, duplicate highlighting, borders, filters, and landscape printing. The generated workbook is intentionally excluded from version control by `.gitignore`.
+
+**Important:** The demonstration is a simplified, independent example, not an exact reproduction of the original workflow. It is provided for safe portfolio review.
 
 ## Configuration
 
@@ -62,6 +75,7 @@ Edit the user settings near the beginning of `court_list_generator.py`:
 ```text
 court-list-generator-github/
 ├── court_list_generator.py
+├── fictional_demo.py
 ├── README.md
 ├── requirements.txt
 └── .gitignore

@@ -29,6 +29,12 @@ The blank portfolio template is **not** the compatible `COURT_TEMPLATE.xlsx` req
 
 **Privacy:** The original uploaded court list, original official template, and original source export are **not published**. Replacing only prisoner and father names is not enough to anonymise records if JIDs, case numbers, court assignments, or other identifiers remain. All public demonstration rows are independently fictional.
 
+## Verified fictional workbook screenshot
+
+A screenshot was rendered from the independently fictional sample workbook and checked against the workbook's cells. It shows the six sample columns (SL, Area, Court, Case ID, Participant, Reference), repeated-ID serial numbering, and duplicate highlighting.
+
+The GitHub-hosted [SVG illustration](assets/fictional-demo-preview.svg) remains a **conceptual preview**, not the actual screenshot. To publish the actual PNG, upload the locally generated `github_fictional_screenshot.png` under `assets/` through GitHub's **Add file → Upload files** interface, then replace the illustration link above with `assets/github_fictional_screenshot.png`. Never substitute a screenshot of an operational report.
+
 ## What the program does
 
 - Reads a `PrisonersList*.xls`, `.xlsx`, or `.xlsm` input file. The `.xls` reader supports an HTML-table export saved with an `.xls` extension; it is not a general-purpose legacy binary `.xls` reader.

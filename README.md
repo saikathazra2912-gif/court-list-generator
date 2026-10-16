@@ -4,6 +4,12 @@ A Python project that automates the preparation of a formatted, next-day court-p
 
 **Portfolio context:** This repository shares source code for demonstrating Python and spreadsheet-automation skills. It does **not** contain operational data, official workbook templates, or real generated reports. Publication of the code should not be interpreted as endorsement or approval by an employer or government agency.
 
+## Portfolio preview
+
+![Illustrative fictional Excel report preview](assets/fictional-demo-preview.svg)
+
+*Illustrative mock-up based on the fictional demonstration's data and layout; this is not a screenshot of a verified Excel execution. Run `fictional_demo.py` to generate the actual workbook.*
+
 ## What the program does
 
 - Reads a `PrisonersList*.xls`, `.xlsx`, or `.xlsm` input file. The `.xls` reader supports an HTML-table export saved with an `.xls` extension; it is not a general-purpose legacy binary `.xls` reader.
